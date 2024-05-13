@@ -1,0 +1,311 @@
+/*CSS-Main*/
+
+/*Sektion: Allgemeines*/
+
+body{
+    margin:0;
+    background-color: #efe5d9;
+    font-family: 'Calibri';
+
+    /* Background: */
+    background-image: url(/images/AtterseeSkaliert.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    padding:16px;
+}
+
+fieldset{
+    width: 50%;
+    margin-left: 25%;
+    margin-right:25%;
+}
+
+fieldset input{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.651);
+    margin-bottom:14px;
+}
+
+.contentBackground{
+    background-color: rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(10px); 
+    border-radius: 12px;
+    padding:20px;
+}
+
+figure{
+    width: auto;
+    float:left;
+}
+figcaption{text-align: center;}
+
+/*Sektion: Formatierung von Meldungen*/
+
+.errorMessage{
+    color:#c50000;
+    font-weight: bold;
+}
+
+.successMessage{
+    color:rgb(1, 96, 1);
+    font-weight: bold;
+    font-size:large;
+}
+.debugMessage{
+    color:rgb(255, 115, 0);
+    font-weight: bold;
+    font-size:large;
+}
+
+/*Sektion: News-Artikel Übersicht und News-Artikel-Präsentation*/
+
+.newsTextWrapper a{
+    text-decoration: none;
+    color: black;
+    /*margin-right:20%;*/
+}
+.newsImageWrapper {
+    text-align: right;
+}
+
+.newsRowPrev{
+    background-color: rgba(191, 207, 207, 0.589);
+    border-radius: 10px;
+    overflow: hidden; 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.newsRowPrev:hover{
+    background-color: rgba(239, 255, 255, 0.589);
+}
+.newsColumnPrevImage {
+    float: right;
+    margin-right: 0;
+    width: 30%; 
+}
+.newsColumnPrevImage img{
+    margin-right: 0;
+}
+
+.newsColumnPrevText {
+    float: left;
+    width: 70%; 
+}
+
+.newsRowPres{
+    overflow: hidden;
+    padding: 8px;
+}
+.newsColumnPresImage {
+    text-align: left;
+    float: right;
+    width: 32%;
+}
+.newsColumnPresText{
+    float: left;
+    width: 58%;
+}
+
+
+/*Sektion: Management Tabellen*/
+
+.userManagerTable{
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding:10px;
+    border: 1px solid black;
+}
+.userManagerTable th{
+    background-color: rgb(188, 171, 171);
+    padding:3px;
+    border: 1px solid black;
+}
+.userManagerTable tr td{
+    background-color: rgb(232, 220, 220);
+    padding:3px;
+    border: 1px solid black;
+}
+
+/*Sektion: Zimmerreservierungen*/
+
+.zimmerImg{
+    width:100%;  
+}
+.zimmerCont{
+    box-sizing: border-box;
+    width:80%;
+    margin:10px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(10px); 
+    border-radius: 12px;
+    padding:20px;
+}
+.zimmerCont:hover{
+    background-color: #d1bc8a;
+}
+.zimmerFont
+{
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:10px;
+    color:black;
+}
+
+#txtOther{
+    width:20%;
+    height: 20%;
+}
+
+.regLogFieldset{
+    box-sizing: border-box;
+    width: 100%;
+    margin:0;
+}
+.regLogFieldset input{width:100%}
+
+.regRight img{
+    display: none;
+    height:100%;
+}
+
+/*Sektion: Homepage*/
+
+.welcomeDivPic
+{
+    margin: 5% 10%;
+    width:80%;
+
+    background-image: url(/images/atterseeBerge.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.636);
+}
+
+.welcomeDivText
+{
+    width:100%;
+    height:100%;
+    padding:5%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.288);
+    border-radius: 15px;
+}
+
+/*Sektion: Sonstiges*/
+
+.hotelOwner
+{
+    box-sizing: border-box;
+    width:10%;
+    margin:1%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(10px); 
+    border-radius: 12px;
+    padding:20px;
+    float:left;
+}
+
+.hotelOwner div
+{
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:10px;
+    color:black;
+}
+
+.hotelOwner img
+{width:100%;}
+
+.hotelOwner
+
+.picturesOfUs{
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.indexh1
+{
+    font-size: 1.5em;
+    margin:2% auto;
+    width:max-content;
+
+}
+.indexh2
+{
+    font-size: 1em;
+    width:max-content;
+    margin:2% auto;
+}
+
+
+/*Sektion: Bildschirmspezifisch*/
+
+@media only screen and (min-width:400px)
+{
+    .indexh1
+    {
+        font-size: 2em;
+    }
+    .indexh2
+    {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width:992px)
+{
+    .regLogFieldset{
+        width:60%;
+        margin:auto;
+    }
+
+    .zimmerCont{
+        width:30%;
+        margin:1.66%;
+        float:left;
+    }
+
+    .indexh1
+    {
+        font-size: 90px;
+    }
+    .indexh2
+    {
+        font-size: 60px;
+    }
+   
+}
+
+@media only screen and (min-width:1200px)
+{
+    .regLogFieldset input{width:95%}
+    .regLeft{
+        width:40%;
+        float:left;
+        height:100%;
+    }
+    .regRight{
+        width:60%;
+        float:left;
+        height:100%;
+    }
+    .regRight img{
+        height:450px;
+        display:block;
+        margin:0 auto;
+        border-radius: 15px;
+        filter: blur(0.7px); 
+        border: 2px solid grey;
+    }
+}
